@@ -1,0 +1,26 @@
+{
+  "name": "solus-engine",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch --smol run ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "react-email": "3.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.32",
+    "@react-email/render": "1.0.4",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.0",
+    "@types/react": "^19.0.8",
+    "compression": "^1.7.5",
+    "express": "^4.21.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
