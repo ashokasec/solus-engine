@@ -53,4 +53,3 @@ export const renderEmailTemplate = async () => {
 };
 
 const result = await renderEmailTemplate()
-console.log(result)
