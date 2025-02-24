@@ -1,0 +1,71 @@
+import {
+  Container,
+  Font,
+  Head,
+  Section,
+  Tailwind,
+  Img,
+  Heading,
+  Text,
+  Button,
+} from "@react-email/components";
+import * as React from "react";
+
+export default function PowderSecurityEmail() {
+  return (
+    <Tailwind
+      config={{
+        theme: {
+          extend: {
+            colors: {
+              powderBrand: "#1E40AF",
+              powderText: "#1F2937",
+              powderSecondary: "#6B7280",
+            },
+          },
+        },
+      }}
+    >
+      <Head>
+        <Font
+          fontFamily="Poppins"
+          fallbackFontFamily="Verdana"
+          webFont={{
+            url: "https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqk3wot.woff2",
+            format: "woff2",
+          }}
+          fontWeight={500}
+          fontStyle="normal"
+        />
+      </Head>
+      <Section
+        className="max-w-xl bg-white"
+        style={{ border: "1px solid #E5E7EB", borderRadius: "8px" }}
+      >
+        <Container className="px-10 py-12">
+          <Heading as="h1" className="text-[32px] mb-6 font-semibold text-powderText">
+            Unusual Login Attempt Detected
+          </Heading>
+          <Text className="mb-2 text-lg text-powderText font-semibold">Hi Shivam,</Text>
+          <Text className="text-base text-powderSecondary">
+            We noticed a login attempt from a new device or location. If this was you,
+            please confirm your identity by using the authentication code below.
+          </Text>
+          <Text className="mt-8 mb-4 text-2xl text-powderBrand font-semibold tracking-wider text-center">
+            721C5E
+          </Text>
+          <Text className="text-sm text-powderSecondary">
+            This code will expire in 30 minutes. If you did not attempt to log in, please
+            secure your account immediately.
+          </Text>
+          <Button
+            href="https://powder.com/security"
+            className="mt-6 bg-powderBrand text-white px-6 py-3 rounded-md font-semibold"
+          >
+            Secure My Account
+          </Button>
+        </Container>
+      </Section>
+    </Tailwind>
+  );
+}
