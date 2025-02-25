@@ -5,7 +5,7 @@
   "scripts": {
     "build": "bun build index.ts --outdir dist --target bun",
     "start": "bun run ./dist/index.js",
-    "dev": "bun --hot run index.ts"
+    "dev": "bun --hot --env-file=.env run index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
