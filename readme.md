@@ -1,6 +1,10 @@
-# Solus Engine
+# Solus Engine (Deprecated)
 
 **Solus Engine** is a Node.js-based service that renders JSX email templates into HTML using `@react-email/render`.
+
+```
+Note: Solus Engine is now Deprecated.
+```
 
 ## Features
 
